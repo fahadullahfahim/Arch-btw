@@ -15,16 +15,16 @@
     ],
     "modules-right": [
       //"waybar/scratchpad",
-      "idle_inhibitor",
+      "network",
       //"custom/kernel",
       //"disk#ssd",
       "temperature",
       "cpu",
       "memory",
       //"bluetooth",
-      "network",
       "pulseaudio",
       "clock",
+      "idle_inhibitor",
       "tray"
       //"custom/weather"
   ],
