@@ -25,8 +25,9 @@
       "pulseaudio",
       "clock",
       "idle_inhibitor",
-      "tray"
-      "custom/power"
+      "tray",
+      "custom/power",
+      "custom/power-profile"
       //"custom/weather"
   ],
   
@@ -36,11 +37,11 @@
        "warp-on-scroll": false,
        "format": "{icon}",
        "format-icons": {
-        "1": "",
-        "2": "󰨞",
-        "3": "",
-        "4": "",
-        "5": "",
+        "1": "󰬺",
+        "2": "󰬻",
+        "3": "󰬼",
+        "4": "󰬽",
+        "5": "󰬾",
         "urgent": "",
         "focused": ""
         //"default": ""
@@ -206,9 +207,17 @@
           "portable": "",
           "car": "",
         },
-        //"on-click": "foot --app-id pulsemixer pulsemixer"
+        
         "on-click": "hyprctl dispatch exec pavucontrol"
-    }
+    },
+    "custom/power-profile": {
+    "format": "{icon} {text}",
+    "exec": "/home/fahadullah/Arch-btw/waybar/scripts/power-profile.sh",
+    "return-type": "json",
+    "interval": 5,
+    "on-click": "/home/fahadullah/Arch-btw/waybar/scripts/power-profile.sh cycle",
+    "tooltip": "Power Profile: Click to cycle"
+}
 }
 
 

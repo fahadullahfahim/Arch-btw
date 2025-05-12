@@ -41,17 +41,12 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0; /* Remove extra padding */
-    margin: 0 5px; /* Keep horizontal margin */
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    padding: 0 10; /* Remove extra padding */
+    margin: 5 1px; /* Keep horizontal margin */
     color: @yellow; /* Text color */
     border: none; /* Remove any border */
     box-shadow: none; /* Remove shadow */
     border-radius: 5px; /* Rounded corners */
-    width: 30px; /* Set a fixed width for uniformity */
-    height: 30px; /* Set a fixed height for uniformity */
 }
 
 #workspaces button:hover {
@@ -244,4 +239,42 @@ label:focus {
 
 #scratchpad.empty {
     background-color: transparent;
+}
+
+#custom-power {
+    background-color: @teal; /* Blue-greenish background color */
+    color: @mantle; /* Text/icon color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0 10px; /* Padding for spacing */
+    margin: 5px 1px; /* Margin for spacing between modules */
+    min-width: 37px; /* Minimum width for consistency */
+}
+
+#custom-power:hover {
+    background-color: @blue; /* Change background color on hover */
+    color: @yellow; /* Change text/icon color on hover */
+    box-shadow: inset 0 -3px @yellow; /* Add a shadow effect on hover */
+}
+
+/* Power profile styling */
+#custom-power-profile.performance {
+    background-color: @green; /* Green for performance mode */
+    color: #ff7070;  /* Red for performance */
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px 1px;
+    min-width: 37px;
+}
+
+#custom-power-profile.balanced {
+    color: #74c7ec;  /* Blue for balanced */
+}
+
+#custom-power-profile.power-saver {
+    background-color: @teal; /* Blue-green for power-saver mode */
+    color: #a6e3a1;  /* Green for power saver */
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px 1px;
+    min-width: 37px;
 }
