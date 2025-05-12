@@ -37,11 +37,11 @@
        "warp-on-scroll": false,
        "format": "{icon}",
        "format-icons": {
-        "1": "󰬺",
-        "2": "󰬻",
-        "3": "󰬼",
-        "4": "󰬽",
-        "5": "󰬾",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
         "urgent": "",
         "focused": ""
         //"default": ""
@@ -60,7 +60,7 @@
   },
   "waybar/mode": {
       "format": "<span style=\"italic\">{}</span>"
-  },
+  },      
   "mpris": {
       "interval": 15,
     "format": "{player_icon} {dynamic}",
@@ -210,14 +210,18 @@
         
         "on-click": "hyprctl dispatch exec pavucontrol"
     },
+
     "custom/power-profile": {
-    "format": "{icon} {text}",
-    "exec": "/home/fahadullah/Arch-btw/waybar/scripts/power-profile.sh",
-    "return-type": "json",
-    "interval": 5,
-    "on-click": "/home/fahadullah/Arch-btw/waybar/scripts/power-profile.sh cycle",
-    "tooltip": "Power Profile: Click to cycle"
-}
+        "exec": "echo '{\"text\":\"$(powerprofilesctl get | sed -e \"s/performance/󰓅/\" -e \"s/balanced/󰾆/\" -e \"s/power-saver/󰾅/\")\", \"class\":\"$(powerprofilesctl get)\"}'",
+        "return-type": "json",
+        "interval": 5,
+        "format": "{}",
+        "tooltip": true,
+        "on-click": "bash -c 'current=$(powerprofilesctl get); mapfile -t profiles < <(powerprofilesctl list | sed -e \"s/^[ *]*//\" -e \"s/:.*//\"); for i in \"${!profiles[@]}\"; do if [[ \"${profiles[i]}\" == \"$current\" ]]; then next=$(( (i+1) % ${#profiles[@]} )); powerprofilesctl set \"${profiles[next]}\"; break; fi; done'",
+        "on-click-right": "powerprofilesctl set power-saver",
+        "on-click-middle": "powerprofilesctl set balanced"
+    }
+
 }
 
 

@@ -41,8 +41,8 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 10; /* Remove extra padding */
-    margin: 5 1px; /* Keep horizontal margin */
+    padding: 0 1; 
+    margin: 5 1px; 
     color: @yellow; /* Text color */
     border: none; /* Remove any border */
     box-shadow: none; /* Remove shadow */
@@ -204,11 +204,13 @@ label:focus {
 #mpris {
     background-color: @base;
     color: @text;
+    border-radius: 5px;
 }
 
 #tray {
     background-color: @overlay0;
     color: @text;
+    border-radius: 5px;
     
 }
 
@@ -257,24 +259,34 @@ label:focus {
 }
 
 /* Power profile styling */
+
 #custom-power-profile.performance {
-    background-color: @green; /* Green for performance mode */
-    color: #ff7070;  /* Red for performance */
+    background-color: @mantle; /* Green for performance mode */
+    color: @red;  /* text*/
     border-radius: 5px;
-    padding: 0 10px;
-    margin: 5px 1px;
-    min-width: 37px;
+    padding: 0 1; 
+    margin: 5 1px; 
+    /* padding: 0 10px; */
+    /* margin: 5px 1px; */
+    /* min-width: 37px; */
 }
-
 #custom-power-profile.balanced {
-    color: #74c7ec;  /* Blue for balanced */
-}
-
-#custom-power-profile.power-saver {
-    background-color: @teal; /* Blue-green for power-saver mode */
-    color: #a6e3a1;  /* Green for power saver */
+    background-color: @green; /* Green for performance mode */
+    color: @mantle;  /* Red for performance */
     border-radius: 5px;
-    padding: 0 10px;
-    margin: 5px 1px;
-    min-width: 37px;
+    padding: 0 1; 
+    margin: 5 1px; 
+    /* padding: 0 10px; */
+    /* margin: 5px 1px; */
+    /* min-width: 37px; */
+}
+#custom-power-profile.power-saver {
+    background-color: @mantle; /* Blue-green for power-saver mode */
+    color: @lavender;  /* Green for power saver */
+    border-radius: 5px;
+    padding: 0 1; 
+    margin: 5px 1px; 
+    /* padding: 0 10px; */
+    /* margin: 5px 1px; */
+    /* min-width: 37px; */
 }
