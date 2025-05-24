@@ -24,10 +24,10 @@
       //"bluetooth",
       "pulseaudio",
       "clock",
-      "idle_inhibitor",
-      "tray",
+      // "idle_inhibitor",
       "custom/power",
-      "custom/power-profile"
+      "tray"
+      // "custom/power-profile"
       //"custom/weather"
   ],
   
@@ -79,13 +79,13 @@
   },
   
   
-  "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-          "activated": "",
-          "deactivated": ""
-      }
-  },
+//   "idle_inhibitor": {
+//       "format": "{icon}",
+//       "format-icons": {
+//           "activated": "",
+//           "deactivated": ""
+//       }
+//   },
   "tray": {
       "icon-size": 13,
       "spacing": 10
@@ -211,16 +211,17 @@
         "on-click": "hyprctl dispatch exec pavucontrol"
     },
 
-    "custom/power-profile": {
-        "exec": "echo '{\"text\":\"$(powerprofilesctl get | sed -e \"s/performance/󰓅/\" -e \"s/balanced/󰾆/\" -e \"s/power-saver/󰾅/\")\", \"class\":\"$(powerprofilesctl get)\"}'",
-        "return-type": "json",
-        "interval": 5,
-        "format": "{}",
-        "tooltip": true,
-        "on-click": "bash -c 'current=$(powerprofilesctl get); mapfile -t profiles < <(powerprofilesctl list | sed -e \"s/^[ *]*//\" -e \"s/:.*//\"); for i in \"${!profiles[@]}\"; do if [[ \"${profiles[i]}\" == \"$current\" ]]; then next=$(( (i+1) % ${#profiles[@]} )); powerprofilesctl set \"${profiles[next]}\"; break; fi; done'",
-        "on-click-right": "powerprofilesctl set power-saver",
-        "on-click-middle": "powerprofilesctl set balanced"
-    }
+    // "custom/power-profile": {
+    //     "exec": "bash -c \"profile=$(powerprofilesctl get); icon=''; text=''; if [[ $profile == 'performance' ]]; then icon='󰓅'; text='Perf'; elif [[ $profile == 'balanced' ]]; then icon='󰾆'; text='Bal'; else icon='󰾅'; text='Save'; fi; echo '{\\\"text\\\":\\\"'$icon' '$text'\\\", \\\"class\\\":\\\"'$profile'\\\"}' \"",
+    //     "return-type": "json",
+    //     "interval": 5,
+    //     "format": "{}",
+    //     "tooltip-format": "Power Profile: {class}",
+    //     "tooltip": true,
+    //     "on-click": "bash -c 'current=$(powerprofilesctl get); mapfile -t profiles < <(powerprofilesctl list | sed -e \"s/^[ *]*//\" -e \"s/:.*//\"); for i in \"${!profiles[@]}\"; do if [[ \"${profiles[i]}\" == \"$current\" ]]; then next=$(( (i+1) % ${#profiles[@]} )); powerprofilesctl set \"${profiles[next]}\"; break; fi; done'",
+    //     "on-click-right": "powerprofilesctl set power-saver",
+    //     "on-click-middle": "powerprofilesctl set balanced"
+    // }
 
 }
 
