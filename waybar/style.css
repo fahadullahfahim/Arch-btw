@@ -40,33 +40,35 @@ button:hover {
     box-shadow: inset 0 -3px @text;
 }
 
+/* Workspace buttons with solid color */
 #workspaces button {
-    padding: 0 1; 
-    margin: 5 1px; 
+    padding: 0 1;
+    margin: 5 1px;
     color: @yellow; /* Text color */
+    background-color: @crust; /* Solid background color */
     border: none; /* Remove any border */
     box-shadow: none; /* Remove shadow */
     border-radius: 5px; /* Rounded corners */
 }
 
 #workspaces button:hover {
-    background-image: linear-gradient(45deg, @blue, @sapphire); /* Reverse gradient on hover */
+    background-color: @sapphire; /* Change background color on hover */
     text-shadow: inherit;
     box-shadow: inherit;
 }
 
 #workspaces button.focused {
-    background-image: linear-gradient(45deg, @sapphire, @crust); /* Keep gradient for focused state */
+    background-color: @blue; /* Solid color for focused state */
     box-shadow: inset 0 -3px @yellow;
 }
 
 #workspaces button.active {
-    background-image: linear-gradient(45deg, @crust, @blue); /* Active state gradient */
+    background-color: @mantle; /* Solid color for active state */
     box-shadow: inset 0 -3px @yellow;
 }
 
 #workspaces button.urgent {
-    background-image: linear-gradient(45deg, @red, @mantle); /* Urgent state gradient */
+    background-color: @red; /* Solid color for urgent state */
 }
 
 #taskbar button.active {
@@ -107,7 +109,7 @@ button:hover {
 }
 
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 5;
 }
 
 .modules-right > widget:last-child > #workspaces {
@@ -213,6 +215,7 @@ label:focus {
     color: @overlay0;
     background-color: @text;
     border-radius: 5px;
+    margin-right: 5px
     
 }
 
@@ -235,16 +238,16 @@ label:focus {
     color: @text;
     background-color: @base;
 } */
-
+/* 
 #scratchpad {
     color: @base;
-    background-color: @text;
-}
-
-#scratchpad.empty {
-    background-color: transparent;
-}
-
+    background-color: @text; */
+/* } */
+/*  */
+/* #scratchpad.empty { */
+    /* background-color: transparent; */
+/* } */
+/*  */
 #custom-power {
     color: @teal;
     background-color: @mantle;
