@@ -1,12 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](surface0)\
+[   ](surface0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](bg:yellow fg:surface0)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:yellow bg:green)\
 $git_branch\
 $git_status\
 [](fg:green bg:teal)\
@@ -21,9 +21,8 @@ $haskell\
 $python\
 [](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
+[](fg:blue )\
 $time\
-[ ](fg:purple)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -100,7 +99,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:mantle bg:yellow"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -175,15 +174,16 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 disabled = false
 time_format = "%R"
 style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+# format = '[[  $time ](fg:mantle bg:purple)]($style)'
+format = '[[  $time ](fg:text)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
+success_symbol = '[](bold fg:green)'
+error_symbol = '[](bold fg:red)'
 vimcmd_symbol = '[](bold fg:creen)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'

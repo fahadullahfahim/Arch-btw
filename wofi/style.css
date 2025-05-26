@@ -52,7 +52,7 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-family: 'JetBrainsMono Nerd Font';
   font-size: 18px;
 }
 
@@ -60,9 +60,9 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @lavender;
+  border: 10px solid @lavender;
   border-radius: 8px;
-  background-color: @base;
+  background-color: rgba(30, 30, 46, 0.5);
 }
 
 /* Inner Box */
@@ -70,6 +70,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
+  border-radius: 8px;
   background-color: @base;
 }
 
@@ -78,12 +79,13 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
+  border-radius: 5px;
   background-color: @base;
 }
 
 /* Scroll */
 #scroll {
-  margin: 0px;
+  margin: 8px;
   padding: 10px;
   border: none;
   background-color: @base;
@@ -91,17 +93,17 @@ window {
 
 /* Input */
 #input {
-  margin: 5px 20px;
+  margin: 5px 90px;
   padding: 10px;
-  border: none;
-  border-radius: 0.1em;
+  border: none ;
+  border-radius: 8px;
   color: @text;
-  background-color: @base;
+  background-color: @crust;
 }
 
 #input image {
     border: none;
-    color: @red;
+    color: @yellow;
 }
 
 #input * {
@@ -126,13 +128,15 @@ window {
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid @lavender;
+  border: 1px ;
+  border-radius: 8px;
+  background-color: @yellow;
 }
 
 #entry:selected #text {
-  color: @mauve;
+  color: @base;
 }
 
 #entry:drop(active) {
-  background-color: @lavender!important;
+  background-color: @sky!important;
 }
