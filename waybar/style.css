@@ -13,7 +13,7 @@
 window#waybar {
     /* background-color: @mantle; */
     background-color: rgba(0, 0, 0, 0);
-    color: @text;
+    color: @yellow;
 }
 
 window#waybar.hidden {
@@ -43,12 +43,12 @@ button:hover {
 /* Workspace buttons with solid color */
 #workspaces button {
     padding: 0 1;
-    margin: 5 1px;
-    color: @yellow; /* Text color */
-    background-color: @crust; /* Solid background color */
-    border: none; /* Remove any border */
-    box-shadow: none; /* Remove shadow */
-    border-radius: 5px; /* Rounded corners */
+    margin: 5 1px; 
+    color: @yellow; 
+    background-color: @crust;
+    border: none; 
+    box-shadow: none; 
+    border-radius: 5px;
 }
 
 #workspaces button:hover {
@@ -103,7 +103,16 @@ button:hover {
     color: @text;
 }
 
-#window,
+#window {
+
+    margin: 5 1px;
+    padding: 0px 5px; 
+    background-color: @mantle; 
+    color: @yellow; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
 #workspaces {
     margin: 0 4px;
 }
@@ -213,7 +222,7 @@ label:focus {
 
 #tray {
     color: @overlay0;
-    background-color: @text;
+    background-color: @mantle;
     border-radius: 5px;
     margin-right: 5px
     
@@ -254,7 +263,7 @@ label:focus {
     border-radius: 5px;
     padding: 0 10px;
     margin: 5px 1px;
-    min-width: 37px;
+    /* min-width: 37px; */
 }
 
 #custom-power:hover {

@@ -93,11 +93,8 @@
   "clock": {
       "interval": 60,
       "timezone": "Asia/Dhaka",
-      "format": "{:%F %R }", // Display date and time
+      "format": "{:%I:%M %p  %d %b}", // 12-hour format with AM/PM, date, and month
       "tooltip-format": "Click to open GNOME Calendar", // Simplified tooltip
-      //"timezone": "Europe/Budapest",
-      //"format": "{:%F %R }",
-      //"tooltip-format": "<tt><small>{calendar}</small></tt>",
       "calendar": {
           "mode": "year",
           "mode-mon-col": 3,
@@ -113,12 +110,7 @@
           }
       },
       "actions": {
-          "on-click": "gnome-calendar %U"// Launch GNOME Calendar on click
-          // "on-click-right": "mode",
-          // "on-click-forward": "tz_up",
-          // "on-click-backward": "tz_down",
-          // "on-scroll-up": "shift_up",
-          // "on-scroll-down": "shift_down"
+          "on-click": "gnome-calendar %U" // Launch GNOME Calendar on click
       }
   },
   "cpu": {
@@ -224,54 +216,3 @@
     // }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* //my old config
-{
-  "position": "top",
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "clock"],
-  "spacing": 10,
-  "clock": {
-    "format": "<span foreground='#f5c2e7'> </span>{:%a %d %H:%M}",
-    "margin-right": 10,
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "margin-right": 10, // Additional right margin for this specific module
-    "margin-left": 10 
-  },
-  "network": {
-    "interface": "enp3s0", // Replace with your interface (from 'ip a')
-    "format-wifi": " {essid}",
-    "format-ethernet": " Ethernet",
-    "format-disconnected": "⚠ Disconnected",
-    "format-alt": " {bandwidthDownBytes}  {bandwidthUpBytes}",
-    "tooltip-format": "IP: {ipaddr}\nDown: {bandwidthDownBytes}\nUp: {bandwidthUpBytes}",
-    "interval": 1,
-    "margin-right": 10, // Additional right margin for this specific module
-    "margin-left": 10 
-  },
-  "pulseaudio": {
-    "on-click": "hyprctl dispatch exec pavucontrol",
-    "format": "{icon} {volume}%",
-    "format-muted": " Muted",
-    "format-icons": {
-      "default": ["", "", ""],
-      "headphone": ""
-    },
-    "margin-right": 10, // Additional right margin for this specific module
-    "margin-left": 10 
-  }
-}
-*/
