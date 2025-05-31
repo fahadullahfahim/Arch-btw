@@ -236,26 +236,7 @@ label:focus {
     background-color: @mantle;
 }
 
-/* #idle_inhibitor {
-    color: @base;
-    background-color: @text;
-    font-family: Inter; */
-/* }
 
-#idle_inhibitor.activated {
-    color: @text;
-    background-color: @base;
-} */
-/* 
-#scratchpad {
-    color: @base;
-    background-color: @text; */
-/* } */
-/*  */
-/* #scratchpad.empty { */
-    /* background-color: transparent; */
-/* } */
-/*  */
 #custom-power {
     color: @teal;
     background-color: @mantle;
