@@ -32,7 +32,7 @@ tooltip label {
 button {
     box-shadow: inset 0 -3px transparent;
     border: none;
-    border-radius: 1;
+    border-radius: 1px;
 }
 
 button:hover {
@@ -42,8 +42,8 @@ button:hover {
 
 /* Workspace buttons with solid color */
 #workspaces button {
-    padding: 0 1;
-    margin: 5 1px; 
+    padding: 0 1px;
+    margin: 5px 1px; 
     color: @yellow; 
     background-color: @crust;
     border: none; 
@@ -105,10 +105,10 @@ button:hover {
 
 #window {
 
-    margin: 5 1px;
+    margin: 5px 1px;
     padding: 0px 5px; 
     background-color: @mantle; 
-    color: @yellow; 
+    color: @lavender; 
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
@@ -118,11 +118,11 @@ button:hover {
 }
 
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 5;
+    margin-left: 5px;
 }
 
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 #custom-weather {
@@ -132,7 +132,7 @@ button:hover {
 }
 
 #custom-kernel {
-    color: @rosewater;
+    color: @lavender;
     background-color: @mantle;
 }
 
@@ -154,14 +154,14 @@ label:focus {
 }
 
 #cpu {
-    color: @green;
+    color: @lavender;
     background-color: @mantle;
     min-width: 45px;
     border-radius: 5px;
 }
 
 #memory {
-    color: @teal;
+    color: @lavender;
     background-color: @mantle;
     border-radius: 5px;
 }
@@ -172,7 +172,7 @@ label:focus {
 }
 
 #network {
-    color: @sky;
+    color: @lavender;
     background-color: @mantle;
     border-radius: 5px;
 }
@@ -190,7 +190,7 @@ label:focus {
 }
 
 #pulseaudio {
-    color: @sapphire;
+    color: @lavender;
     background-color: @mantle;
     border-radius: 5px;
 }
@@ -202,7 +202,7 @@ label:focus {
 }
 
 #temperature {
-    color: @yellow;
+    color: @lavender;
     background-color: @mantle;
     min-width: 37px;
     border-radius: 5px;
@@ -224,8 +224,7 @@ label:focus {
     color: @overlay0;
     background-color: @mantle;
     border-radius: 5px;
-    margin-right: 5px
-    
+    margin-right: 5px;
 }
 
 #tray > .passive {
@@ -263,7 +262,6 @@ label:focus {
     border-radius: 5px;
     padding: 0 10px;
     margin: 5px 1px;
-    /* min-width: 37px; */
 }
 
 #custom-power:hover {
