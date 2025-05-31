@@ -44,7 +44,7 @@ button:hover {
 #workspaces button {
     padding: 0 1px;
     margin: 5px 1px; 
-    color: @yellow; 
+    color: @lavender; 
     background-color: @crust;
     border: none; 
     box-shadow: none; 
@@ -59,12 +59,15 @@ button:hover {
 
 #workspaces button.focused {
     background-color: @blue; /* Solid color for focused state */
-    box-shadow: inset 0 -3px @yellow;
+    box-shadow: inset 0 -3px @lavender; 
+    /* doesnt affect the buttons in my exprience */
 }
 
 #workspaces button.active {
-    background-color: @mantle; /* Solid color for active state */
-    box-shadow: inset 0 -3px @yellow;
+    /* this is the part that changes the workspaces buttons appearance */
+    color: @crust; 
+    background-color: @lavender; /* Solid color for active state */
+    /* box-shadow: inset 0 -3px @lavender; */
 }
 
 #workspaces button.urgent {
