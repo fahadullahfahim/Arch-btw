@@ -78,14 +78,14 @@
   "clock": {
       "interval": 60,
       "timezone": "Asia/Dhaka",
-      "format": "{:%I:%M %p  %d %b}", // 12-hour format with AM/PM, date, and month
+      "format": "{:%I:%M %p  %d %b}" // 12-hour format with AM/PM, date, and month
     // No calendar configuration here as it has been removed
   },
   
   "cpu": {
       "interval": 3,
       "format": "{usage}% ",
-      "on-click": "kitty --class htop htop",
+      "on-click": "kitty --class htop htop"
   },
   "memory": {
       "interval": 3,
@@ -148,7 +148,7 @@
           "headset": "",
           "phone": "",
           "portable": "",
-          "car": "",
+          "car": ""
         },
         
         "on-click": "hyprctl dispatch exec pavucontrol"
