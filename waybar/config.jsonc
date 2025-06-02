@@ -17,6 +17,8 @@
     "temperature",
     "cpu",
     "memory",
+    "disk",
+    "custom/kernel",
     "pulseaudio",
     "clock",
     "custom/power",
@@ -77,20 +79,7 @@
       "interval": 60,
       "timezone": "Asia/Dhaka",
       "format": "{:%I:%M %p  %d %b}", // 12-hour format with AM/PM, date, and month
-      "calendar": {
-          "mode": "year",
-          "mode-mon-col": 3,
-          "weeks-pos": "right",
-          "on-scroll": 1,
-          "on-click-right": "mode",
-          "format": {
-              "months": "<span color='#cba6f7'><b>{}</b></span>",
-              "days": "<span color='#cdd6f4'><b>{}</b></span>",
-              "weeks": "<span color='#94e2d5'>W{}</span>",
-              "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
-              "today": "<span color='#f5e0dc'><b><u>{}</u></b></span>"
-          }
-                }
+    // No calendar configuration here as it has been removed
   },
   
   "cpu": {
@@ -115,18 +104,20 @@
       "format": "{temperatureC}°C {icon}",
       "format-icons": ["", "", ""]
   },
-  "disk#ssd": {
+  "disk": {
       "interval": 60,
-      "format": "{path} {free} ",
+      "format": "{percentage_used}% 󰋊",
       "path": "/",
-      "tooltip": true,
+      "tooltip-format":"{used} used out of {total} on {path} ({percentage_used}%)",
       "warning": 80,
       "critical": 90
   },
   "network": {
     "interval": 1, // Update every second for real-time speed
     "interface": "enp3s0", 
-    "format-ethernet": "  {bandwidthDownBytes}  {bandwidthUpBytes}", 
+    // "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes}", 
+    "format-ethernet": "󰈀",
+    "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
     "format-disconnected": "Disconnected ⚠"
     
   
