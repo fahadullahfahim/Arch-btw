@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url("/home/fahadullah/.config/wofi/colors.css");
 
 
 * {
@@ -6,150 +6,64 @@
   font-size: 18px;
 }
 
-/* Window */
+
 window {
-  margin: 0px;
-  padding: 10px;
-  border: 10px solid @lavender;
-  border-radius: 8px;
-  background-color: rgba(30, 30, 46, 1);
+/* border:3px solid @lavender; */
+background-color: @lavender;
+border-radius : 5px
 }
 
-/* Inner Box */
-#inner-box {
-  margin: 5px;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: @base;
-}
-
-/* Outer Box */
-#outer-box {
-  margin: 5px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: @base;
-}
-
-/* Scroll */
-#scroll {
-  margin: 8px;
-  padding: 10px;
-  border: none;
-  background-color: @base;
-}
-
-/* Input */
 #input {
-  margin: 5px 90px;
-  padding: 10px;
-  border: none ;
-  border-radius: 8px;
-  color: @text;
-  background-color: @crust;
+/* search here part */
+margin: 15px;
+border: 1px solid @base;
+background-color: @base;
+border-radius: 5px;
+color : @yellow 
 }
 
-#input image {
-    border: none;
-    color: @yellow;
+/* inned box and scroll needes to be same color */
+#scroll {
+margin: 10px;
+border: 2px solid @crust;
+background-color: @crust;
+border-radius : 5px
+}
+#inner-box {
+/* margin: 5px; */
+border: 2px solid @crust;
+background-color: @crust;
 }
 
-#input * {
-  outline: 4px solid @red;
+
+
+ 
+#outer-box {
+margin: 2px;
+/* border: 1px solid @crust; */
+background-color: @crust;
+border-radius : 5px 
 }
 
-/* Text */
+
 #text {
-  margin: 5px;
-  border: none;
-  color: @text;
-}
+margin: 20px;
+color : @text
+} 
+#text:selected {
+color : @yellow
+} 
 
-#entry {
-  background-color: @base;
-}
 
-#entry arrow {
-  border: none;
-  color: @lavender;
-}
-
-/* Selected Entry */
 #entry:selected {
-  border: 1px ;
-  border-radius: 8px;
-  background-color: @yellow;
+/* color the entry box that is selected */
+background-color: @base;
+border-radius: 5px
 }
 
-#entry:selected #text {
-  color: @base;
-}
-
-#entry:drop(active) {
-  color: @yellow;
-  background-color: @base;
-}
-
-/* Dropdown items styling */
-expander list {
-  
-  background-color: @mantle;
-  /* border: 2px solid @lavender; */
-  border-radius: 8px;
-  padding: 5px;
-  margin: 3px;
-}
-
-expander list #entry {
-  color: @yellow;
-  padding: 5px;
-  margin: 2px 0;
-  border-radius: 4px;
-}
-
-expander list #entry:hover {
-  background-color: @surface0;
-}
-
-expander list #entry:selected {
-  background-color: @lavender;
-}
-
-/* Make all text in expanded list yellow, regardless of state */
-expander list #text,
-expander:focus list #text,
-expander:active list #text,
-expander:hover list #text,
-expander:checked list #text,
-expander:selected list #text {
-  color: @yellow ;
-}
-
-/* Cover all possible entry states */
-expander list #entry #text,
-expander list #entry:selected #text,
-expander list #entry:hover #text,
-expander list #entry:active #text,
-expander list #entry:focus #text,
-expander list #entry:checked #text {
-  color: @yellow ;
-}
-
-/* Force expanded items to always have yellow text */
-expander:checked list #entry #text {
-  color: @yellow ;
-}
-
-/* Arrow styling */
-#entry arrow {
-  color: @lavender;
-  min-width: 16px;
-  min-height: 16px;
-  margin-right: 5px;
-}
-
-#entry:selected arrow {
-  color: @base;
+#expander-box {
+    margin: 15px;
+    background-color: @surface0;
+    border-radius : 5px
+    
 }
