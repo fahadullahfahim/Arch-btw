@@ -19,6 +19,9 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
+window#waybar.empty #window {
+    background-color: transparent;
+}
 
 tooltip {
     background-color: @base;
@@ -250,6 +253,36 @@ label:focus {
 }
 
 #custom-power:hover {
+    color: @mantle;
+    background-color: @lavender;
+}
+
+/* Power profile daemon styling */
+#power-profiles-daemon {
+    color: @lavender;
+    background-color: @mantle;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px 1px;
+    min-width: 25px;
+}
+
+#power-profiles-daemon.performance {
+    color: @red;
+    background-color: @mantle;
+}
+
+#power-profiles-daemon.balanced {
+    color: @green;
+    background-color: @mantle;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @blue;
+    background-color: @mantle;
+}
+
+#power-profiles-daemon:hover {
     color: @mantle;
     background-color: @lavender;
 }

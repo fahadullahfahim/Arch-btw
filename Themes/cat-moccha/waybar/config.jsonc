@@ -18,12 +18,17 @@
     "cpu",
     "memory",
     "disk",
+    "power-profiles-daemon",
     "custom/kernel",
     "pulseaudio",
     "clock",
     "custom/power",
     "tray"
   ],
+  "hyprland/window": {
+	"format": "{}"
+	
+},
   
    "hyprland/workspaces": {
        "disable-scroll": false,
@@ -133,6 +138,20 @@
     "tooltip": "Power Menu (Left Click) | Lock Screen (Right Click)",
     "on-scroll-up": "brightnessctl set +5%",  
     "on-scroll-down": "brightnessctl set 5%-"  
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip": true,
+    "tooltip-format": "Power Profile: {profile}",
+    "format-icons": {
+      "default": "⚡",
+      "performance": "🔥",
+      "balanced": "⚖️",
+      "power-saver": "🌱"
+    },
+    "on-click": "powerprofilesctl set $(powerprofilesctl list | grep -v '\\*' | head -n1)",
+    "on-click-right": "powerprofilesctl set balanced",
+    "on-click-middle": "powerprofilesctl set power-saver"
   },
   "pulseaudio": {
       "scroll-step": 2,
