@@ -1,69 +1,52 @@
-@import url("/home/fahadullah/.config/wofi/colors.css");
-
+@import url("/home/fahadullah/.cache/wal/colors-wofi.css");
 
 * {
   font-family: 'JetBrainsMono Nerd Font';
   font-size: 18px;
 }
 
-
 window {
-/* border:3px solid @lavender; */
-background-color: @lavender;
-border-radius : 5px
+border: 3px solid @color3;
+background-color: @background;
+}
+
+#outer-box {
+    background-color: @background;
+    margin: 2px;
 }
 
 #input {
 /* search here part */
 margin: 15px;
-border: 1px solid @base;
-background-color: @base;
-border-radius: 5px;
-color : @yellow 
+border: 1px solid @color1;
+background-color: @color1;
+color: @color0;
 }
 
-/* inned box and scroll needes to be same color */
+/* inner box and scroll needs to be same color */
 #scroll {
 margin: 10px;
-border: 2px solid @crust;
-background-color: @crust;
-border-radius : 5px
 }
+
 #inner-box {
-/* margin: 5px; */
-border: 2px solid @crust;
-background-color: @crust;
+background-color: rgba(0, 0, 0, 0);
 }
-
-
-
- 
-#outer-box {
-margin: 2px;
-/* border: 1px solid @crust; */
-background-color: @crust;
-border-radius : 5px 
-}
-
 
 #text {
 margin: 20px;
-color : @text
-} 
-#text:selected {
-color : @yellow
+color: @foreground;
 } 
 
+#text:selected {
+color: @foreground;
+} 
 
 #entry:selected {
 /* color the entry box that is selected */
-background-color: @base;
-border-radius: 5px
+background-color: @color2;
 }
 
 #expander-box {
     margin: 15px;
-    background-color: @surface0;
-    border-radius : 5px
-    
+    background-color: @background;
 }

@@ -1,8 +1,11 @@
-width=40%
-height=30%
-prompt=Search here
+show= run
 
-normal_window= true
-show=drun
-lines=10
-insensitive=true
+width= 25%
+prompt= Search here
+
+normal_window= false
+
+layer=overlay
+allow_images=true
+lines=5
+insensitive= true

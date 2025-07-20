@@ -3,6 +3,10 @@
   "layer": "top",
   "position": "top",
   "height": 30,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
   "width": 1920, // Adjusted to fit a 1080p monitor
   "spacing": 1,
   "modules-left": [
@@ -13,17 +17,17 @@
       "hyprland/window"
     ],
     "modules-right": [
-    "clock",
-    "network",
-    "temperature",
-    "cpu",
-    "memory",
-    "disk",
-    "pulseaudio",
-    "power-profiles-daemon",
-    "custom/kernel",
-    "custom/power",
-    "tray"
+      "network",
+      "temperature",
+      "cpu",
+      "memory",
+      "disk",
+      "clock",
+      "pulseaudio",
+      "power-profiles-daemon",
+      "custom/kernel",
+      "custom/power",
+      "tray"
   ],
 
   "hyprland/window": {
