@@ -12,15 +12,15 @@ background-color: @background;
 
 #outer-box {
     background-color: @background;
-    margin: 2px;
+    margin: 1px;
 }
 
 #input {
 /* search here part */
 margin: 15px;
 border: 1px solid @color1;
-background-color: @color1;
-color: @color0;
+background-color: @background;
+color: @color7;
 }
 
 /* inner box and scroll needs to be same color */
@@ -43,7 +43,7 @@ color: @foreground;
 
 #entry:selected {
 /* color the entry box that is selected */
-background-color: @color2;
+background-color: @color8;
 }
 
 #expander-box {

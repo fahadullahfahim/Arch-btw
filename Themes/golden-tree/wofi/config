@@ -1,11 +1,11 @@
 show= run
 
-width= 25%
+width= 35%
 prompt= Search here
 
 normal_window= false
 
 layer=overlay
 allow_images=true
-lines=5
+lines=6
 insensitive= true

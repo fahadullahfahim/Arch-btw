@@ -16,10 +16,12 @@
    WAYBAR WINDOW
    ============================================ */
 window#waybar {
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: @background;
     color: @color11;
     margin: 0px 0px 0px 0px; /* top right bottom left - set all to 0 */
     border: 0px;
+    transition-duration: 1s;
 }
 
 window#waybar.hidden {
@@ -129,8 +131,8 @@ button:hover {
 #power-profiles-daemon,
 #custom-power-profile {
     /*configuring the lines belows affects all the modules right*/
-    margin: 3px 0px;
-    padding: 0 9px;
+    margin: 3px 0px ;
+    padding: 0 10px;
     color: @color1;
     background-color: @background;
 }
