@@ -96,7 +96,7 @@
   },
   "memory": {
     "interval": 3,
-    "format": "{}% ",
+    "format": "{}% ",
     "on-click": "kitty --class btop btop",
     "tooltip-format": "Used: {used:0.1f}G/{total:0.1f}G. Swap: {swapUsed:0.1f}G/{swapTotal:0.1f}G",
     "states": {
@@ -143,9 +143,9 @@
     "tooltip-format": "Power Profile: {profile}",
     "format-icons": {
       "default": "⚡",
-      "performance": "🔥",
-      "balanced": "⚖️",
-      "power-saver": "🌱"
+      "performance": "",
+      "balanced": "",
+      "power-saver": " "
     },
     "on-click": "powerprofilesctl set $(powerprofilesctl list | grep -v '\\*' | head -n1)",
     "on-click-right": "powerprofilesctl set balanced",
@@ -160,12 +160,10 @@
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
-        "headphone": " ",
-        "hands-free": "",
-        "headset": "",
+        "headphone": "",
+        "headset": "",
         "phone": "",
         "portable": "",
-        "car": ""
       },  
     "on-click": "hyprctl dispatch exec pavucontrol"
     }
