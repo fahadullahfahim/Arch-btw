@@ -22,12 +22,12 @@
       "cpu",
       "memory",
       "disk",
-      "clock",
       "pulseaudio",
       "power-profiles-daemon",
       "custom/kernel",
       "custom/power",
-      "tray"
+      "tray",
+      "clock" 
   ],
 
   "hyprland/window": {

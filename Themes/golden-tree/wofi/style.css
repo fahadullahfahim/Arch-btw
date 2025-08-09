@@ -1,7 +1,7 @@
 @import url("/home/fahadullah/.cache/wal/colors-wofi.css");
 
 * {
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: 'NotoSans Nerd Font';
   font-size: 18px;
 }
 
@@ -11,7 +11,7 @@ background-color: @background;
 }
 
 #outer-box {
-    background-color: @background;
+    background-color: @color1;
     margin: 1px;
 }
 
@@ -34,16 +34,16 @@ background-color: rgba(0, 0, 0, 0);
 
 #text {
 margin: 20px;
-color: @foreground;
+color: @color0;
 } 
 
 #text:selected {
-color: @foreground;
+color: @color0;
 } 
 
 #entry:selected {
 /* color the entry box that is selected */
-background-color: @color8;
+background-color: @color2;
 }
 
 #expander-box {
