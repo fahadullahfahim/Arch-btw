@@ -1,0 +1,52 @@
+@import url("/home/fahadullah/.cache/wal/colors-wofi.css");
+
+* {
+  font-family: 'NotoSans Nerd Font';
+  font-size: 18px;
+}
+
+window {
+border: 3px solid @color3;
+background-color: @background;
+}
+
+#outer-box {
+    background-color: @color1;
+    margin: 1px;
+}
+
+#input {
+/* search here part */
+margin: 15px;
+border: 1px solid @color1;
+background-color: @background;
+color: @color7;
+}
+
+/* inner box and scroll needs to be same color */
+#scroll {
+margin: 10px;
+}
+
+#inner-box {
+background-color: rgba(0, 0, 0, 0);
+}
+
+#text {
+margin: 20px;
+color: @color0;
+} 
+
+#text:selected {
+color: @color0;
+} 
+
+#entry:selected {
+/* color the entry box that is selected */
+background-color: @color2;
+}
+
+#expander-box {
+    margin: 15px;
+    background-color: @background;
+}

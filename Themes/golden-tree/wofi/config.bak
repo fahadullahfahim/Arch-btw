@@ -1,0 +1,11 @@
+show= run
+
+width= 25%
+prompt= Hello !
+
+normal_window= false
+
+layer=overlay
+allow_images=true
+lines=6
+insensitive= true
