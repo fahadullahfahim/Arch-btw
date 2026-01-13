@@ -1,4 +1,4 @@
-@import url("/home/fahadullah/.cache/wal/colors-waybar.css");
+@import url("./mocha.css");
 /* red underlines errors are not an issue for waybar to work */
 
 /* ============================================
@@ -17,8 +17,8 @@
    ============================================ */
 window#waybar {
     /* background-color: rgba(0, 0, 0, 0); */
-    background-color: @background;
-    color: @color11;
+    background-color: @base;
+    color: @text;
     margin: 0px 0px 0px 0px; /* top right bottom left - set all to 0 */
     border: 0px;
     transition-duration: 1s;
@@ -36,12 +36,12 @@ window#waybar.empty #window {
    TOOLTIPS
    ============================================ */
 tooltip {
-    background-color: @background;
-    border: 5px solid @color4;
+    background-color: @base;
+    border: 5px solid @surface1;
 }
 
 tooltip label {
-    color: @foreground;
+    color: @text;
 }
 
 /* ============================================
@@ -76,26 +76,26 @@ button:hover {
 #workspaces button {
     margin: 2px 0px; /* Y AXIS x AIXIS*/
     padding: 0 6px;
-    color: @color2; 
-    background-color: @background;
+    color: @lavender; 
+    background-color: @crust;
 }
 
 #workspaces button:hover {
-    background-color: @color3;
+    background-color: @sapphire;
 }
 
 #workspaces button.focused {
-    background-color: @color1;
+    background-color: @blue;
 }
 
 #workspaces button.active {
-    color: @color0; 
-    background-color: @color1;
+    color: @crust; 
+    background-color: @lavender;
 }
 
 #workspaces button.urgent {
-    color: @color1;
-    background-color: @color7;
+    color: @crust;
+    background-color: @red;
 }
 
 /* ============================================
@@ -103,8 +103,8 @@ button:hover {
    ============================================ */
 #window {
     padding: 0 8px;
-    background-color: @color6; 
-    color: @color0; 
+    background-color: @mantle; 
+    color: @lavender; 
     margin: 3px 0px;
 }
 
@@ -133,8 +133,8 @@ button:hover {
     /*configuring the lines belows affects all the modules right*/
     margin: 3px 0px ;
     padding: 0 10px;
-    color: @color1;
-    background-color: @background;
+    color: @text;
+    background-color: @mantle;
 }
 
 /* ============================================
@@ -155,20 +155,20 @@ button:hover {
 
 #clock {
     margin: 3px 0px;
-    color: @color0;
-    background-color: @color1;
+    color: @crust;
+    background-color: @lavender;
 }
 
 #cpu {
-    color: @color3;
+    color: @peach;
 }
 
 #memory {
-    color: @color3;
+    color: @green;
 } 
 
 #disk {
-    color: @color3;
+    color: @teal;
 }
 
 /* #network {
@@ -191,7 +191,7 @@ button:hover {
 } */
 
 #pulseaudio {
-    color: @color5;
+    color: @mauve;
 }
 
 /* #pulseaudio.muted {
@@ -250,7 +250,7 @@ button:hover {
    POWER PROFILE DAEMON (performace- balance-saver mode)
    ============================================ */
 #power-profiles-daemon {
-    color: @color5;
+    color: @sky;
 }
 /* 
 #power-profiles-daemon.performance {
@@ -280,11 +280,11 @@ button:hover {
    ============================================ */
 @keyframes blink {
     to {
-        background-color: @color0;
-        color: @foreground;
+        background-color: @mantle;
+        color: @text;
     }
 }
 
 label:focus {
-    background-color: @color0;
+    background-color: @mantle;
 }
