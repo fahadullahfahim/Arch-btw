@@ -12,8 +12,3 @@ background_opacity 0.9
 
 # shell /bin/bash --login
 shell /usr/bin/fish --login
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Mocha
-include current-theme.conf
-# END_KITTY_THEME

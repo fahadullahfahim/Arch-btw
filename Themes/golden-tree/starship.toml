@@ -3,6 +3,7 @@
 
 format = """
 $os\
+$shell\
 $username\
 $directory\
 $git_branch\
@@ -46,6 +47,10 @@ Debian = " 󰣚"
 Redhat = " 󱄛"
 RedHatEnterprise = "󱄛"
 
+[shell]
+disabled = false
+style = "bg:black fg:cyan"
+format = "[ $indicator ]($style)"
 [username]
 show_always = true
 style_user = "bg:black fg:white"
