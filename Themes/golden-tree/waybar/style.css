@@ -160,7 +160,15 @@ button:hover {
 }
 
 #cpu {
-    color: @peach;
+    color: @green;
+}
+
+#cpu.warning {
+    color: @yellow;
+}
+
+#cpu.critical {
+    color: @red;
 }
 
 #memory {
